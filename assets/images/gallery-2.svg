@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF5F0"/>
+      <stop offset="50%" stop-color="#F2EAE4"/>
+      <stop offset="100%" stop-color="#EBE0D8"/>
+    </linearGradient>
+    <linearGradient id="goldArch" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#B8860B"/>
+      <stop offset="50%" stop-color="#F3E5AB"/>
+      <stop offset="100%" stop-color="#B8860B"/>
+    </linearGradient>
+    <radialGradient id="lanternGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF8DC" stop-opacity="0.9"/>
+      <stop offset="40%" stop-color="#F7D070" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#D4AF37" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bgGrad2)"/>
+  <rect x="25" y="25" width="750" height="550" rx="16" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-opacity="0.5"/>
+  <rect x="35" y="35" width="730" height="530" rx="12" fill="none" stroke="#E8A598" stroke-width="0.8" stroke-opacity="0.4" stroke-dasharray="6,4"/>
+
+  <!-- Ornate Archway -->
+  <path d="M 260 520 L 260 260 A 140 140 0 0 1 540 260 L 540 520" fill="none" stroke="url(#goldArch)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M 280 520 L 280 265 A 120 120 0 0 1 520 265 L 520 520" fill="none" stroke="#D4AF37" stroke-width="2" opacity="0.6"/>
+
+  <!-- Arch Top Medallion -->
+  <circle cx="400" cy="120" r="14" fill="#FDFBF7" stroke="#D4AF37" stroke-width="2"/>
+  <path d="M400,95 L400,106 M400,134 L400,145 M375,120 L386,120 M414,120 L425,120" stroke="#D4AF37" stroke-width="2"/>
+
+  <!-- Hanging Lanterns with Glow -->
+  <g transform="translate(330, 220)">
+    <line x1="0" y1="-80" x2="0" y2="0" stroke="#D4AF37" stroke-width="1.5"/>
+    <circle cx="0" cy="15" r="30" fill="url(#lanternGlow)"/>
+    <polygon points="-12,0 12,0 16,24 -16,24" fill="#3D312A" stroke="#D4AF37" stroke-width="1.5"/>
+    <polygon points="-16,24 16,24 0,34" fill="#D4AF37"/>
+    <circle cx="0" cy="12" r="5" fill="#FFFBE6"/>
+  </g>
+  <g transform="translate(470, 220)">
+    <line x1="0" y1="-80" x2="0" y2="0" stroke="#D4AF37" stroke-width="1.5"/>
+    <circle cx="0" cy="15" r="30" fill="url(#lanternGlow)"/>
+    <polygon points="-12,0 12,0 16,24 -16,24" fill="#3D312A" stroke="#D4AF37" stroke-width="1.5"/>
+    <polygon points="-16,24 16,24 0,34" fill="#D4AF37"/>
+    <circle cx="0" cy="12" r="5" fill="#FFFBE6"/>
+  </g>
+
+  <!-- Cascading Floral Bouquets around the Arch -->
+  <!-- Left Arch Cluster -->
+  <g transform="translate(260, 240)">
+    <circle cx="-15" cy="0" r="26" fill="#F8E5E1"/>
+    <circle cx="-15" cy="0" r="20" fill="#E8A598" opacity="0.75"/>
+    <circle cx="-15" cy="0" r="14" fill="#D8827C" opacity="0.8"/>
+    <circle cx="10" cy="-25" r="22" fill="#FAF0EA"/>
+    <circle cx="10" cy="-25" r="15" fill="#EAA397" opacity="0.7"/>
+    <circle cx="-25" cy="30" r="20" fill="#F4DCD6"/>
+    <!-- Foliage leaves -->
+    <path d="M-40,-10 C-60,-20 -60,0 -40,10 C-50,-10 -40,-10 -40,-10" fill="#8FA489" opacity="0.85"/>
+    <path d="M0,-45 C0,-65 20,-65 15,-40" fill="#758B6E" opacity="0.85"/>
+    <path d="M-30,55 C-50,65 -50,45 -30,40" fill="#8FA489" opacity="0.85"/>
+  </g>
+
+  <!-- Right Arch Cluster -->
+  <g transform="translate(540, 240)">
+    <circle cx="15" cy="0" r="26" fill="#F8E5E1"/>
+    <circle cx="15" cy="0" r="20" fill="#E8A598" opacity="0.75"/>
+    <circle cx="15" cy="0" r="14" fill="#D8827C" opacity="0.8"/>
+    <circle cx="-10" cy="-25" r="22" fill="#FAF0EA"/>
+    <circle cx="-10" cy="-25" r="15" fill="#EAA397" opacity="0.7"/>
+    <circle cx="25" cy="30" r="20" fill="#F4DCD6"/>
+    <!-- Foliage leaves -->
+    <path d="M40,-10 C60,-20 60,0 40,10 C50,-10 40,-10 40,-10" fill="#8FA489" opacity="0.85"/>
+    <path d="M0,-45 C0,-65 -20,-65 -15,-40" fill="#758B6E" opacity="0.85"/>
+    <path d="M30,55 C50,65 50,45 30,40" fill="#8FA489" opacity="0.85"/>
+  </g>
+
+  <!-- Arch Peak Floral Crest -->
+  <g transform="translate(400, 120)">
+    <circle cx="0" cy="0" r="28" fill="#F8E5E1"/>
+    <circle cx="0" cy="0" r="20" fill="#E8A598" opacity="0.8"/>
+    <circle cx="-35" cy="8" r="18" fill="#FAF0EA"/>
+    <circle cx="35" cy="8" r="18" fill="#FAF0EA"/>
+    <ellipse cx="-55" cy="5" rx="15" ry="8" fill="#8FA489" transform="rotate(-15 -55 5)"/>
+    <ellipse cx="55" cy="5" rx="15" ry="8" fill="#8FA489" transform="rotate(15 55 5)"/>
+  </g>
+
+  <!-- Typography Labels -->
+  <text x="400" y="475" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-size="24" font-weight="600" fill="#3D312A" letter-spacing="3">THE CEREMONIAL ARCH</text>
+  <text x="400" y="505" text-anchor="middle" font-family="'Montserrat', sans-serif" font-size="12" font-weight="500" fill="#8C7768" letter-spacing="4">BARAAT CELEBRATION</text>
+  <line x1="330" y1="485" x2="470" y2="485" stroke="#D4AF37" stroke-width="0.8" opacity="0.6"/>
+</svg>

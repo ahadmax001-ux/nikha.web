@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCF9F5"/>
+      <stop offset="50%" stop-color="#F5EFEB"/>
+      <stop offset="100%" stop-color="#EFE6E0"/>
+    </linearGradient>
+    <linearGradient id="goldRing" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4AF37"/>
+      <stop offset="35%" stop-color="#FFF3C4"/>
+      <stop offset="65%" stop-color="#AA771C"/>
+      <stop offset="100%" stop-color="#D4AF37"/>
+    </linearGradient>
+    <radialGradient id="sparkleGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFDF7" stop-opacity="1"/>
+      <stop offset="50%" stop-color="#E8C77B" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#D4AF37" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#7B6149" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="600" fill="url(#bgGrad1)"/>
+
+  <!-- Ornate Border -->
+  <rect x="25" y="25" width="750" height="550" rx="16" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-opacity="0.5"/>
+  <rect x="35" y="35" width="730" height="530" rx="12" fill="none" stroke="#E8A598" stroke-width="0.8" stroke-opacity="0.4" stroke-dasharray="6,4"/>
+
+  <!-- Botanical corner branches -->
+  <g stroke="#C5A059" stroke-width="1.2" fill="none" opacity="0.6">
+    <path d="M45,80 Q70,50 110,48 M60,65 Q85,75 100,68 M75,55 Q95,45 125,52"/>
+    <path d="M755,80 Q730,50 690,48 M740,65 Q715,75 700,68 M725,55 Q705,45 675,52"/>
+    <path d="M45,520 Q70,550 110,552 M60,535 Q85,525 100,532 M75,545 Q95,555 125,548"/>
+    <path d="M755,520 Q730,550 690,552 M740,535 Q715,525 700,532 M725,545 Q705,555 675,548"/>
+  </g>
+
+  <!-- Soft Rose Petals Floating -->
+  <g fill="#EAA397" opacity="0.45">
+    <ellipse cx="280" cy="380" rx="32" ry="18" transform="rotate(-25 280 380)"/>
+    <ellipse cx="510" cy="390" rx="28" ry="16" transform="rotate(20 510 390)"/>
+    <ellipse cx="340" cy="420" rx="24" ry="14" transform="rotate(40 340 420)"/>
+    <ellipse cx="460" cy="415" rx="30" ry="17" transform="rotate(-30 460 415)"/>
+  </g>
+  <g fill="#D8827C" opacity="0.35">
+    <ellipse cx="260" cy="395" rx="20" ry="12" transform="rotate(-15 260 395)"/>
+    <ellipse cx="535" cy="375" rx="22" ry="13" transform="rotate(35 535 375)"/>
+  </g>
+
+  <!-- Central Silk Pedestal -->
+  <ellipse cx="400" cy="380" rx="180" ry="65" fill="#FFFFFF" opacity="0.85" filter="url(#softShadow)"/>
+  <ellipse cx="400" cy="375" rx="160" ry="55" fill="none" stroke="#D4AF37" stroke-width="1" opacity="0.4"/>
+
+  <!-- Rings Visual Group -->
+  <g filter="url(#softShadow)" transform="translate(400, 290)">
+    <!-- Ring 1 (Groom's Classic Gold Band) -->
+    <ellipse cx="-45" cy="15" rx="72" ry="56" fill="none" stroke="url(#goldRing)" stroke-width="16" transform="rotate(-28 -45 15)"/>
+    <!-- Ring 2 (Bride's Solitaire Diamond Ring) -->
+    <ellipse cx="45" cy="-5" rx="68" ry="52" fill="none" stroke="url(#goldRing)" stroke-width="12" transform="rotate(25 45 -5)"/>
+    
+    <!-- Diamond Mount & Solitaire Gem -->
+    <g transform="translate(70, -58)">
+      <!-- Sparkle halo -->
+      <circle cx="0" cy="0" r="42" fill="url(#sparkleGlow)"/>
+      <!-- Solitaire Diamond -->
+      <polygon points="0,-22 18,-6 12,18 -12,18 -18,-6" fill="#F8FAFC" stroke="#C5A059" stroke-width="1.5"/>
+      <polygon points="0,-22 9,-6 0,18 -9,-6" fill="#FFFFFF" opacity="0.8"/>
+      <polygon points="-18,-6 0,-22 0,18" fill="#E2E8F0" opacity="0.5"/>
+      <!-- Sparkle rays -->
+      <line x1="0" y1="-34" x2="0" y2="-24" stroke="#FFF7D6" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="0" y1="24" x2="0" y2="34" stroke="#FFF7D6" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="-34" y1="0" x2="-24" y2="0" stroke="#FFF7D6" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="24" y1="0" x2="34" stroke="#FFF7D6" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- Typography Labels -->
+  <text x="400" y="475" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-size="24" font-weight="600" fill="#3D312A" letter-spacing="3">ETERNAL UNION</text>
+  <text x="400" y="505" text-anchor="middle" font-family="'Montserrat', sans-serif" font-size="12" font-weight="500" fill="#8C7768" letter-spacing="4">SHARIK &amp; ZAINAB</text>
+  <line x1="330" y1="485" x2="470" y2="485" stroke="#D4AF37" stroke-width="0.8" opacity="0.6"/>
+</svg>

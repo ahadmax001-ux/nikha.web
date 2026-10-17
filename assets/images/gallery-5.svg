@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCF8F5"/>
+      <stop offset="50%" stop-color="#F4ECE5"/>
+      <stop offset="100%" stop-color="#EAE0D7"/>
+    </linearGradient>
+    <linearGradient id="silkRibbon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCEFD8"/>
+      <stop offset="50%" stop-color="#E8CCA0"/>
+      <stop offset="100%" stop-color="#C5A059"/>
+    </linearGradient>
+    <radialGradient id="roseShade" cx="40%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#FFF0EE"/>
+      <stop offset="45%" stop-color="#F5BDB5"/>
+      <stop offset="80%" stop-color="#E0867D"/>
+      <stop offset="100%" stop-color="#C26157"/>
+    </radialGradient>
+    <radialGradient id="creamRose" cx="40%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#FAF1E6"/>
+      <stop offset="85%" stop-color="#ECDCC7"/>
+      <stop offset="100%" stop-color="#D7BA97"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bgGrad5)"/>
+  <rect x="25" y="25" width="750" height="550" rx="16" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-opacity="0.5"/>
+  <rect x="35" y="35" width="730" height="530" rx="12" fill="none" stroke="#E8A598" stroke-width="0.8" stroke-opacity="0.4" stroke-dasharray="6,4"/>
+
+  <!-- Floral Bouquet Composition -->
+  <g transform="translate(400, 240)">
+    <!-- Foliage Leaves behind bouquet -->
+    <path d="M-60,-90 C-110,-120 -130,-70 -80,-50 Z" fill="#879E82" opacity="0.85"/>
+    <path d="M60,-90 C110,-120 130,-70 80,-50 Z" fill="#879E82" opacity="0.85"/>
+    <path d="M-120,-30 C-160,-20 -150,30 -100,10 Z" fill="#748E6E" opacity="0.85"/>
+    <path d="M120,-30 C160,-20 150,30 100,10 Z" fill="#748E6E" opacity="0.85"/>
+    <path d="M0,-120 C-20,-160 20,-160 0,-120 Z" fill="#879E82" opacity="0.85"/>
+
+    <!-- Outer Pastel Roses -->
+    <circle cx="-65" cy="-35" r="48" fill="url(#creamRose)"/>
+    <circle cx="65" cy="-35" r="48" fill="url(#creamRose)"/>
+    <circle cx="-50" cy="35" r="42" fill="url(#roseShade)"/>
+    <circle cx="50" cy="35" r="42" fill="url(#roseShade)"/>
+    
+    <!-- Central Grand Rose -->
+    <circle cx="0" cy="-10" r="62" fill="url(#roseShade)"/>
+    
+    <!-- Rose petal curves inside center rose -->
+    <path d="M-20,-25 Q0,-45 20,-25 Q35,-5 20,15 Q0,35 -20,15 Q-35,-5 -20,-25" fill="none" stroke="#FFFFFF" stroke-width="2.5" opacity="0.7"/>
+    <path d="M-10,-12 Q0,-25 10,-12 Q18,0 10,12 Q0,20 -10,12 Q-18,0 -10,-12" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.8"/>
+    <circle cx="0" cy="0" r="5" fill="#FFFFFF" opacity="0.9"/>
+
+    <!-- Small accent blossoms and baby's breath -->
+    <g fill="#FFFDF8" stroke="#D4AF37" stroke-width="0.8">
+      <circle cx="-100" cy="-75" r="8"/>
+      <circle cx="-110" cy="-60" r="6"/>
+      <circle cx="100" cy="-75" r="8"/>
+      <circle cx="110" cy="-60" r="6"/>
+      <circle cx="-95" cy="50" r="7"/>
+      <circle cx="95" cy="50" r="7"/>
+      <circle cx="0" cy="-90" r="9"/>
+    </g>
+
+    <!-- Stems wrapped in golden silk -->
+    <rect x="-18" y="75" width="36" height="55" rx="6" fill="url(#silkRibbon)"/>
+    <line x1="-18" y1="88" x2="18" y2="88" stroke="#AA771C" stroke-width="1.2"/>
+    <line x1="-18" y1="102" x2="18" y2="102" stroke="#AA771C" stroke-width="1.2"/>
+    <line x1="-18" y1="116" x2="18" y2="116" stroke="#AA771C" stroke-width="1.2"/>
+
+    <!-- Flowing Ribbon streamers -->
+    <path d="M-12,125 Q-40,165 -30,205 Q-20,185 -8,135" fill="url(#silkRibbon)" opacity="0.9"/>
+    <path d="M12,125 Q40,165 30,205 Q20,185 8,135" fill="url(#silkRibbon)" opacity="0.9"/>
+  </g>
+
+  <!-- Typography Labels -->
+  <text x="400" y="475" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-size="24" font-weight="600" fill="#3D312A" letter-spacing="3">THE BRIDAL BLOSSOMS</text>
+  <text x="400" y="505" text-anchor="middle" font-family="'Montserrat', sans-serif" font-size="12" font-weight="500" fill="#8C7768" letter-spacing="4">GRACE &amp; RADIANCE</text>
+  <line x1="330" y1="485" x2="470" y2="485" stroke="#D4AF37" stroke-width="0.8" opacity="0.6"/>
+</svg>

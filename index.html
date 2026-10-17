@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedding Invitation | Sharik Zafar Siddiqui &amp; Zainab Parween</title>
+  <meta name="description"
+    content="Official Wedding Invitation for the Baraat Ceremony of Sharik Zafar Siddiqui &amp; Zainab Parween on Thursday, 12 November 2026 in Roh, Nawada, Bihar.">
+  <meta name="keywords"
+    content="Sharik and Zainab Wedding, Wedding Invitation, Baraat Ceremony, Sharik Zafar Siddiqui, Zainab Parween, Roh Nawada">
+  <meta name="author" content="Mohammad Alamin Hussain">
+  <meta property="og:title" content="Wedding Invitation | Sharik &amp; Zainab">
+  <meta property="og:description"
+    content="Together with our families, we joyfully invite you to celebrate our Baraat Ceremony on 12 November 2026.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/hero-floral-bg.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💍</text></svg>">
+
+  <!-- Google Fonts: Playfair Display, Great Vibes, Outfit, Amiri -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Great+Vibes&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Floating Petals Canvas -->
+  <canvas id="petalsCanvas" aria-hidden="true"></canvas>
+
+  <!-- Ambient Audio Player Element & Control -->
+  <audio id="weddingMusic" src="music/song.mp4" preload="metadata" loop playsinline>
+    <source src="music/song.mp4" type="audio/mp4">
+    <source src="music/song.mp4" type="video/mp4">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- ==============================================
+       INTERACTIVE WEDDING INVITATION OPENING EXPERIENCE
+       ============================================== -->
+  <div id="invitationOpeningOverlay" class="invitation-opening-overlay" role="dialog" aria-modal="true"
+    aria-label="Wedding Invitation Envelope">
+    <!-- Subtle Stardust & Gold Particle Canvas -->
+    <canvas id="openingSparklesCanvas" class="opening-sparkles-canvas" aria-hidden="true"></canvas>
+
+    <!-- Skip / Direct Access in corner -->
+    <button id="skipOpeningBtn" class="opening-skip-btn" title="Skip directly to website" aria-label="Skip to website">
+      <span>Skip to Invitation</span> &rarr;
+    </button>
+
+    <!-- Luxury Indian Wedding Opening Backdrop Decor (Ivory, Champagne Gold, Soft Blush & Sage Florals) -->
+    <div class="opening-decor-layer" aria-hidden="true">
+      <div class="opening-bg-mandala">
+        <img src="assets/images/royal-mandala-motif.svg" alt="" class="opening-mandala-img" width="600" height="600">
+      </div>
+      <div class="opening-royal-frame">
+        <div class="frame-inner-border"></div>
+      </div>
+      <!-- Soft Blush Roses & Muted Sage Green Corner Florals -->
+      <div class="opening-floral-corner corner-top-left">
+        <img src="assets/images/opening-floral-corner.svg" alt="" class="floral-corner-img" width="320" height="320">
+      </div>
+      <div class="opening-floral-corner corner-top-right">
+        <img src="assets/images/opening-floral-corner.svg" alt="" class="floral-corner-img" width="320" height="320">
+      </div>
+      <div class="opening-floral-corner corner-bottom-left">
+        <img src="assets/images/opening-floral-corner.svg" alt="" class="floral-corner-img" width="320" height="320">
+      </div>
+      <div class="opening-floral-corner corner-bottom-right">
+        <img src="assets/images/opening-floral-corner.svg" alt="" class="floral-corner-img" width="320" height="320">
+      </div>
+    </div>
+
+    <div class="opening-content-wrapper">
+
+      <!-- Top Royal Welcome & Blessing Tag -->
+      <div class="opening-header-badge">
+        <span class="royal-crest-icon">👑</span>
+        <span class="opening-badge-text">ROYAL WEDDING INVITATION</span>
+      </div>
+
+      <p class="opening-bismillah" aria-label="Bismillahir Rahmanir Raheem">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+
+      <p class="opening-tagline">WITH THE BLESSINGS OF ALLAH AND OUR FAMILIES</p>
+
+      <!-- 3D Luxury Envelope Component -->
+      <div class="envelope-scene">
+        <div class="envelope-wrapper" id="envelopeWrapper" tabindex="0" role="button"
+          aria-label="Click or tap to open wedding invitation">
+
+          <!-- Back Interior with Gold Shimmer Lining -->
+          <div class="envelope-back">
+            <div class="envelope-interior-pattern"></div>
+          </div>
+
+          <!-- The Inner Invitation Card (slides out on click) -->
+          <div class="envelope-letter" id="envelopeLetter">
+            <div class="letter-gold-rim"></div>
+            <div class="letter-inner-content">
+              <div class="letter-bismillah-mini">
+                <img src="assets/images/bismillah.svg" alt="" width="140" height="34">
+              </div>
+              <span class="letter-prelude">CORDIALLY INVITED TO CELEBRATE</span>
+              <h2 class="letter-couple-names">
+                <span class="l-name">Sharik</span>
+                <span class="l-amp">&amp;</span>
+                <span class="l-name">Zainab</span>
+              </h2>
+              <div class="letter-divider-mini">
+                <img src="assets/images/floral-divider.svg" alt="" width="160" height="24">
+              </div>
+              <p class="letter-date-loc">12 NOVEMBER 2026 • THURSDAY • 8:00 PM</p>
+              <p class="letter-venue-mini">Mohalla Khalifa Tola, Roh, Nawada, Bihar</p>
+            </div>
+          </div>
+
+          <!-- Envelope Left & Right Side Folds -->
+          <div class="envelope-pocket-left"></div>
+          <div class="envelope-pocket-right"></div>
+          <div class="envelope-pocket-bottom"></div>
+
+          <!-- Front Sleeve Label -->
+          <div class="envelope-front-label">
+            <div class="sleeve-border">
+              <span class="sleeve-sub">WEDDING CELEBRATION</span>
+              <h1 class="sleeve-names">Sharik &amp; Zainab</h1>
+              <span class="sleeve-date">12 • 11 • 2026</span>
+            </div>
+          </div>
+
+          <!-- Top Foldable Flap with 3D Rotate -->
+          <div class="envelope-top-flap" id="envelopeFlap">
+            <div class="flap-triangle"></div>
+          </div>
+
+          <!-- Embossed Royal Gold Wax Seal with Monogram SZ -->
+          <div class="royal-wax-seal" id="waxSeal" title="Tap to Open Invitation">
+            <div class="seal-glow-ring"></div>
+            <div class="seal-body">
+              <span class="seal-monogram">SZ</span>
+            </div>
+            <div class="seal-ripple"></div>
+          </div>
+
+        </div><!-- /envelope-wrapper -->
+      </div><!-- /envelope-scene -->
+
+      <!-- Action Prompt / Tap Button -->
+      <div class="opening-action-zone">
+        <button id="openInvitationBtn" class="btn-open-invitation" aria-label="Tap to open wedding invitation">
+          <span class="btn-sparkle-icon">✨</span>
+          <span class="btn-open-label">TAP TO OPEN INVITATION</span>
+          <span class="btn-sparkle-icon">✨</span>
+        </button>
+        <p class="opening-instruction-hint">Tap the golden seal or invitation to unveil</p>
+      </div>
+
+    </div><!-- /opening-content-wrapper -->
+  </div><!-- /invitationOpeningOverlay -->
+
+  <!-- Floating Audio & Controls -->
+  <div class="floating-controls" aria-label="Floating website actions">
+    <button id="reopenEnvelopeBtn" class="control-bubble" title="Replay Invitation Envelope"
+      aria-label="Replay Invitation Envelope">
+      <span class="bubble-icon">✉️</span>
+      <span class="bubble-tooltip">Open Envelope</span>
+    </button>
+    <button id="musicToggleBtn" class="control-bubble" title="Toggle Romantic Music" aria-label="Toggle Romantic Music">
+      <span class="bubble-icon">🎵</span>
+      <span class="bubble-tooltip">Play Music</span>
+    </button>
+    <button id="scrollUpBtn" class="control-bubble hidden" title="Scroll to top" aria-label="Scroll to top">
+      <span class="bubble-icon">▲</span>
+    </button>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="main-header" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Sharik and Zainab Home">
+        <span class="logo-names">S &amp; Z</span>
+        <span class="logo-date">12.11.2026</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-label="Open navigation menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link">Invitation</a></li>
+          <li><a href="#details" class="nav-link">Wedding Details</a></li>
+          <li><a href="#countdown" class="nav-link">Countdown</a></li>
+          <li><a href="#rsvp" class="nav-link">RSVP</a></li>
+          <li><a href="#gallery" class="nav-link">Moments</a></li>
+          <li><a href="#preview" class="nav-link">Preview Photos</a></li>
+        </ul>
+        <div class="nav-cta-wrap">
+          <a href="#rsvp" class="btn btn-gold btn-sm">Kindly RSVP</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==============================================
+         SECTION 1: HERO / MAIN WEDDING INVITATION CARD
+         ============================================== -->
+    <section class="hero-section" id="hero">
+      <div class="hero-container">
+        <!-- Luxury Wedding Card Wrapper -->
+        <div class="invitation-card" id="invitationCard">
+
+          <!-- Corner Floral SVG Ornaments -->
+          <div class="corner-ornament corner-top-left" aria-hidden="true">
+            <img src="assets/images/floral-corner.svg" alt="" width="120" height="120">
+          </div>
+          <div class="corner-ornament corner-top-right" aria-hidden="true">
+            <img src="assets/images/floral-corner.svg" alt="" width="120" height="120">
+          </div>
+          <div class="corner-ornament corner-bottom-left" aria-hidden="true">
+            <img src="assets/images/floral-corner.svg" alt="" width="120" height="120">
+          </div>
+          <div class="corner-ornament corner-bottom-right" aria-hidden="true">
+            <img src="assets/images/floral-corner.svg" alt="" width="120" height="120">
+          </div>
+
+          <!-- Card Content -->
+          <div class="card-inner-frame">
+
+            <!-- Bismillah Calligraphy -->
+            <div class="bismillah-header" aria-label="Bismillahir Rahmanir Raheem">
+              <img src="assets/images/bismillah.svg" alt="Bismillahir Rahmanir Raheem" class="bismillah-img">
+            </div>
+
+            <p class="blessing-subtitle">WITH THE BLESSINGS OF ALLAH AND OUR FAMILIES</p>
+
+            <p class="invitation-intro">
+              Together with our families, we joyfully invite you to celebrate the wedding of
+            </p>
+
+            <!-- Prominent Couple Names -->
+            <div class="couple-title-wrap">
+              <h1 class="couple-first-names">
+                <span class="first-name groom">SHARIK</span>
+                <span class="ampersand">&amp;</span>
+                <span class="first-name bride">ZAINAB</span>
+              </h1>
+
+              <div class="couple-full-names">
+                <span class="full-name">Sharik Zafar Siddiqui</span>
+                <span class="names-separator">and</span>
+                <span class="full-name">Zainab Parween</span>
+              </div>
+            </div>
+
+            <!-- Floral Divider -->
+            <div class="ornamental-divider" aria-hidden="true">
+              <img src="assets/images/floral-divider.svg" alt="" class="divider-img">
+            </div>
+
+            <!-- Ceremony Event Details Badge -->
+            <div class="ceremony-badge">
+              <span class="ceremony-tag">WEDDING EVENT</span>
+              <h2 class="ceremony-name">BARAAT CEREMONY</h2>
+            </div>
+
+            <!-- Date & Time Highlights -->
+            <div class="invitation-date-time">
+              <div class="date-main">12 NOVEMBER 2026</div>
+              <div class="day-time">
+                <span class="day">THURSDAY</span>
+                <span class="dot-separator">•</span>
+                <span class="time">8:00 PM</span>
+              </div>
+            </div>
+
+            <p class="invitation-footnote">
+              “Your presence will make our celebration even more special.”
+            </p>
+
+            <!-- Hero Action Buttons -->
+            <div class="hero-actions">
+              <a href="#details" class="btn btn-gold btn-lg btn-glow" id="viewDetailsBtn">
+                <span class="btn-text">VIEW WEDDING DETAILS</span>
+                <span class="btn-arrow">↓</span>
+              </a>
+              <a href="#rsvp" class="btn btn-outline btn-lg">
+                <span class="btn-text">RESPOND TO RSVP</span>
+              </a>
+            </div>
+
+          </div><!-- /card-inner-frame -->
+        </div><!-- /invitation-card -->
+      </div><!-- /hero-container -->
+    </section>
+
+    <!-- ==============================================
+         SECTION 2: WEDDING DETAILS SECTION
+         ============================================== -->
+    <section class="section details-section" id="details">
+      <div class="container">
+
+        <div class="section-header text-center reveal-item">
+          <span class="section-tag">Essential Information</span>
+          <h2 class="section-title">THE WEDDING DETAILS</h2>
+          <div class="ornamental-divider" aria-hidden="true">
+            <img src="assets/images/floral-divider.svg" alt="" class="divider-img">
+          </div>
+          <p class="section-desc">
+            We are honored to have your gracious company and prayers on this auspicious occasion.
+          </p>
+        </div>
+
+        <!-- 3 Beautiful Cards -->
+        <div class="details-grid">
+
+          <!-- CARD 1: THE COUPLE -->
+          <div class="detail-card card-couple reveal-item stagger-1">
+            <div class="card-icon-wrap" aria-hidden="true">
+              <span class="card-icon">💍</span>
+            </div>
+            <span class="card-subtitle">CARD 1</span>
+            <h3 class="card-heading">THE COUPLE</h3>
+
+            <div class="card-content-body">
+              <div class="person-block groom-block">
+                <span class="person-role">Groom</span>
+                <h4 class="person-name">Sharik Zafar Siddiqui</h4>
+              </div>
+
+              <div class="union-symbol" aria-hidden="true">&amp;</div>
+
+              <div class="person-block bride-block">
+                <span class="person-role">Bride</span>
+                <h4 class="person-name">Zainab Parween</h4>
+              </div>
+            </div>
+
+            <div class="card-footer-note">
+              <p>United in love, blessed by Allah &amp; family</p>
+            </div>
+          </div>
+
+          <!-- CARD 2: DATE AND TIME -->
+          <div class="detail-card card-datetime reveal-item stagger-2">
+            <div class="card-icon-wrap" aria-hidden="true">
+              <span class="card-icon">🗓️</span>
+            </div>
+            <span class="card-subtitle">CARD 2</span>
+            <h3 class="card-heading">DATE AND TIME</h3>
+
+            <div class="card-content-body">
+              <div class="event-tag-pill">BARAAT CEREMONY</div>
+              <div class="highlight-date">Thursday, 12 November 2026</div>
+              <div class="highlight-time">8:00 PM IST</div>
+              <div class="timezone-note">(Indian Standard Time, UTC+05:30)</div>
+            </div>
+
+            <div class="card-footer-actions">
+              <button class="btn btn-sm btn-subtle" id="addToCalendarBtn" title="Add event to your calendar">
+                📅 Add to Calendar
+              </button>
+            </div>
+          </div>
+
+          <!-- CARD 3: VENUE -->
+          <div class="detail-card card-venue reveal-item stagger-3">
+            <div class="card-icon-wrap" aria-hidden="true">
+              <span class="card-icon">📍</span>
+            </div>
+            <span class="card-subtitle">CARD 3</span>
+            <h3 class="card-heading">VENUE</h3>
+
+            <div class="card-content-body">
+              <address class="venue-address">
+                <strong class="venue-highlight">Mohalla Khalifa Tola,</strong><br>
+                Near Madarsa Darul Uloom Faridia,<br>
+                Roh, Nawada, Bihar, India.
+              </address>
+              <p class="venue-hint">Easily accessible with parking &amp; welcome desk.</p>
+            </div>
+
+            <div class="card-footer-actions">
+              <a href="https://www.google.com/maps/search/?api=1&query=Khalifa+Tola+Roh+Nawada+near+Madarsa+Darul+Uloom+Faridia"
+                target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-sm" id="googleMapsBtn"
+                title="Open location in Google Maps (Opens in a new tab)">
+                <span class="btn-text">OPEN LOCATION IN GOOGLE MAPS</span>
+                <span class="btn-external">↗</span>
+              </a>
+              <button class="btn btn-sm btn-subtle" id="copyAddressBtn" title="Copy address to clipboard">
+                📋 Copy Address
+              </button>
+            </div>
+          </div>
+
+        </div><!-- /details-grid -->
+
+      </div><!-- /container -->
+    </section>
+
+    <!-- ==============================================
+         SECTION 3: LIVE WEDDING COUNTDOWN
+         ============================================== -->
+    <section class="section countdown-section" id="countdown">
+      <div class="container">
+
+        <div class="countdown-card reveal-item">
+          <!-- Corner flourishes -->
+          <div class="ornament-soft top-left"></div>
+          <div class="ornament-soft top-right"></div>
+          <div class="ornament-soft bottom-left"></div>
+          <div class="ornament-soft bottom-right"></div>
+
+          <div class="section-header text-center">
+            <span class="section-tag">Awaiting the Blissful Moment</span>
+            <h2 class="section-title">COUNTING DOWN TO OUR SPECIAL DAY</h2>
+            <div class="ornamental-divider" aria-hidden="true">
+              <img src="assets/images/floral-divider.svg" alt="" class="divider-img">
+            </div>
+            <p class="section-desc">
+              Thursday, 12 November 2026 at 8:00 PM IST (Asia/Kolkata)
+            </p>
+          </div>
+
+          <!-- Countdown Digits Grid -->
+          <div class="countdown-grid" id="countdownGrid" role="timer" aria-live="polite">
+
+            <div class="countdown-unit" data-unit="days">
+              <div class="digit-box">
+                <span class="digit-value" id="countDays">00</span>
+              </div>
+              <span class="digit-label">DAYS</span>
+            </div>
+
+            <div class="countdown-sep">:</div>
+
+            <div class="countdown-unit" data-unit="hours">
+              <div class="digit-box">
+                <span class="digit-value" id="countHours">00</span>
+              </div>
+              <span class="digit-label">HOURS</span>
+            </div>
+
+            <div class="countdown-sep">:</div>
+
+            <div class="countdown-unit" data-unit="minutes">
+              <div class="digit-box">
+                <span class="digit-value" id="countMinutes">00</span>
+              </div>
+              <span class="digit-label">MINUTES</span>
+            </div>
+
+            <div class="countdown-sep">:</div>
+
+            <div class="countdown-unit" data-unit="seconds">
+              <div class="digit-box">
+                <span class="digit-value" id="countSeconds">00</span>
+              </div>
+              <span class="digit-label">SECONDS</span>
+            </div>
+
+          </div><!-- /countdown-grid -->
+
+          <!-- Celebration message when target date passes -->
+          <div class="celebration-message hidden" id="celebrationMessage">
+            <div class="celebration-icon">🎉 💐 ✨</div>
+            <h3>The celebration day has arrived!</h3>
+            <p>Welcome to the Baraat Ceremony of Sharik &amp; Zainab. May Allah bless this sacred union.</p>
+          </div>
+
+        </div><!-- /countdown-card -->
+
+      </div><!-- /container -->
+    </section>
+
+    <!-- ==============================================
+         SECTION 4: RSVP FORM WITH WHATSAPP INTEGRATION
+         ============================================== -->
+    <section class="section rsvp-section" id="rsvp">
+      <div class="container">
+
+        <div class="rsvp-card-wrapper reveal-item">
+          <div class="section-header text-center">
+            <span class="section-tag">Warmest Invitation</span>
+            <h2 class="section-title">KINDLY RSVP</h2>
+            <div class="ornamental-divider" aria-hidden="true">
+              <img src="assets/images/floral-divider.svg" alt="" class="divider-img">
+            </div>
+            <p class="section-desc">
+              Please let us know whether you will be joining us for this special celebration.
+            </p>
+          </div>
+
+          <form id="rsvpForm" class="rsvp-form" novalidate>
+
+            <!-- Field 1: Guest Full Name (Required) -->
+            <div class="form-group">
+              <label for="guestName" class="form-label">
+                Guest Full Name <span class="required-mark" aria-hidden="true">*</span>
+              </label>
+              <div class="input-wrap">
+                <input type="text" id="guestName" name="guestName" class="form-control" placeholder="e.g. Tariq Ahmad"
+                  required autocomplete="name">
+                <span class="input-icon" aria-hidden="true">👤</span>
+              </div>
+              <p class="form-error" id="nameError" aria-live="assertive"></p>
+            </div>
+
+            <!-- Field 2: Attendance Confirmation (Required) -->
+            <div class="form-group">
+              <label class="form-label">
+                Attendance Confirmation <span class="required-mark" aria-hidden="true">*</span>
+              </label>
+
+              <div class="attendance-options" role="radiogroup" aria-labelledby="attendanceLabel">
+                <label class="radio-card">
+                  <input type="radio" name="attendance" value="Joyfully Accepts" required>
+                  <span class="radio-custom"></span>
+                  <span class="radio-content">
+                    <span class="radio-emoji">🌸</span>
+                    <span class="radio-text">Joyfully Accepts</span>
+                  </span>
+                </label>
+
+                <label class="radio-card">
+                  <input type="radio" name="attendance" value="Regretfully Declines">
+                  <span class="radio-custom"></span>
+                  <span class="radio-content">
+                    <span class="radio-emoji">💌</span>
+                    <span class="radio-text">Regretfully Declines</span>
+                  </span>
+                </label>
+
+                <label class="radio-card">
+                  <input type="radio" name="attendance" value="Not Sure Yet">
+                  <span class="radio-custom"></span>
+                  <span class="radio-content">
+                    <span class="radio-emoji">⏳</span>
+                    <span class="radio-text">Not Sure Yet</span>
+                  </span>
+                </label>
+              </div>
+              <p class="form-error" id="attendanceError" aria-live="assertive"></p>
+            </div>
+
+            <!-- Field 3: Number of Guests Attending (1 to 10) -->
+            <div class="form-group" id="guestCountGroup">
+              <label for="guestCount" class="form-label">
+                Number of Guests Attending
+              </label>
+              <div class="select-wrap">
+                <select id="guestCount" name="guestCount" class="form-control select-control">
+                  <option value="1">1 Guest</option>
+                  <option value="2" selected>2 Guests</option>
+                  <option value="3">3 Guests</option>
+                  <option value="4">4 Guests</option>
+                  <option value="5">5 Guests</option>
+                  <option value="6">6 Guests</option>
+                  <option value="7">7 Guests</option>
+                  <option value="8">8 Guests</option>
+                  <option value="9">9 Guests</option>
+                  <option value="10">10 Guests</option>
+                </select>
+                <span class="select-arrow" aria-hidden="true">▾</span>
+              </div>
+              <span class="form-hint">Including yourself and your family members</span>
+            </div>
+
+            <!-- Field 4: Question for the Family (Optional) -->
+            <div class="form-group">
+              <label for="familyQuestion" class="form-label">
+                Question for the Family <span class="optional-badge">(Optional)</span>
+              </label>
+              <textarea id="familyQuestion" name="familyQuestion" class="form-control textarea-control" rows="2"
+                placeholder="Any queries regarding timing, route directions, or hospitality..."></textarea>
+            </div>
+
+            <!-- Field 5: Personal Message for the Couple (Optional) -->
+            <div class="form-group">
+              <label for="coupleMessage" class="form-label">
+                Personal Message for the Couple <span class="optional-badge">(Optional)</span>
+              </label>
+              <textarea id="coupleMessage" name="coupleMessage" class="form-control textarea-control" rows="3"
+                placeholder="Share your prayers, warmest wishes, and blessings for Sharik &amp; Zainab..."></textarea>
+            </div>
+
+            <!-- WhatsApp RSVP Info Card -->
+            <div class="rsvp-notice-box">
+              <div class="notice-icon">💬</div>
+              <div class="notice-content">
+                <strong>Instant WhatsApp Submission:</strong>
+                <p>Clicking the button will open WhatsApp with your pre-filled RSVP response addressed to the hosts.
+                  Please make sure to press <strong>Send</strong> inside WhatsApp to deliver your response!</p>
+              </div>
+            </div>
+
+            <!-- Form Submit Button -->
+            <div class="form-action text-center">
+              <button type="submit" class="btn btn-whatsapp btn-lg" id="submitRsvpBtn">
+                <span class="whatsapp-logo" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.861.174.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.144.39-.086s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z" />
+                    <path
+                      d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.98-1.399C8.423 21.499 10.155 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.272c-1.637 0-3.175-.467-4.484-1.278l-.322-.198-2.964.832.847-2.888-.216-.344C6.012 15.048 5.5 13.567 5.5 12c0-3.584 2.916-6.5 6.5-6.5s6.5 2.916 6.5 6.5-2.916 6.5-6.5 6.5z" />
+                  </svg>
+                </span>
+                <span class="btn-text">SEND RSVP ON WHATSAPP</span>
+              </button>
+            </div>
+
+            <!-- WhatsApp Submission Modal / Toast -->
+            <div id="rsvpModal" class="rsvp-modal hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+              <div class="modal-backdrop"></div>
+              <div class="modal-dialog">
+                <div class="modal-header">
+                  <span class="modal-icon">📲</span>
+                  <h3 id="modalTitle">Ready to Send on WhatsApp</h3>
+                </div>
+                <div class="modal-body">
+                  <p>Your RSVP message has been formatted. WhatsApp will now open in a new window or app with your
+                    message.</p>
+                  <div class="modal-callout">
+                    <span class="callout-pin">📌</span>
+                    <p><strong>Important Reminder:</strong><br>Opening WhatsApp will NOT automatically send the message.
+                      Please make sure to press the <strong>Send button</strong> inside WhatsApp to deliver your
+                      response!</p>
+                  </div>
+                </div>
+                <div class="modal-actions">
+                  <button type="button" class="btn btn-gold btn-sm" id="modalConfirmBtn">Proceed to WhatsApp</button>
+                  <button type="button" class="btn btn-subtle btn-sm" id="modalCloseBtn">Cancel</button>
+                </div>
+              </div>
+            </div>
+
+          </form>
+
+        </div><!-- /rsvp-card-wrapper -->
+
+      </div><!-- /container -->
+    </section>
+
+    <!-- ==============================================
+         SECTION 5: WEDDING PHOTO GALLERY
+         ============================================== -->
+    <section class="section gallery-section" id="gallery">
+      <div class="container">
+
+        <div class="section-header text-center reveal-item">
+          <span class="section-tag">Cherished Celebrations</span>
+          <h2 class="section-title">OUR WEDDING MOMENTS</h2>
+          <div class="ornamental-divider" aria-hidden="true">
+            <img src="assets/images/floral-divider.svg" alt="" class="divider-img">
+          </div>
+          <p class="section-desc">
+            A glimpse into the romance, sacred rituals, and joyful celebrations of Sharik &amp; Zainab.
+          </p>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid" id="weddingGalleryGrid">
+
+          <!-- Item 1 -->
+          <figure class="gallery-item" tabindex="0" data-caption="The Sacred Rings — Sharik &amp; Zainab"
+            data-src="assets/images/gallery-1.svg">
+            <div class="gallery-frame">
+              <img src="assets/images/gallery-1.svg" alt="Sacred Wedding Rings on Silk" class="gallery-img"
+                loading="lazy">
+              <div class="gallery-overlay">
+                <span class="overlay-icon">🔍</span>
+                <span class="overlay-title">The Sacred Rings</span>
+                <span class="overlay-sub">Eternal Union</span>
+              </div>
+            </div>
+          </figure>
+
+          <!-- Item 2 -->
+          <figure class="gallery-item" tabindex="0" data-caption="The Ceremonial Arch — Baraat Celebration"
+            data-src="assets/images/gallery-2.svg">
+            <div class="gallery-frame">
+              <img src="assets/images/gallery-2.svg" alt="Ceremonial Floral Archway" class="gallery-img" loading="lazy">
+              <div class="gallery-overlay">
+                <span class="overlay-icon">🔍</span>
+                <span class="overlay-title">The Ceremonial Arch</span>
+                <span class="overlay-sub">Baraat Venue</span>
+              </div>
+            </div>
+          </figure>
+
+          <!-- Item 3 -->
+          <figure class="gallery-item" tabindex="0" data-caption="The Royal Invitation — Sealed With Blessings"
+            data-src="assets/images/gallery-3.svg">
+            <div class="gallery-frame">
+              <img src="assets/images/gallery-3.svg" alt="Royal Wedding Invitation Suite" class="gallery-img"
+                loading="lazy">
+              <div class="gallery-overlay">
+                <span class="overlay-icon">🔍</span>
+                <span class="overlay-title">The Royal Invitation</span>
+                <span class="overlay-sub">Sealed With Love</span>
+              </div>
+            </div>
+          </figure>
+
+          <!-- Item 4 -->
+          <figure class="gallery-item" tabindex="0" data-caption="Feast &amp; Hospitality — Traditional Welcome"
+            data-src="assets/images/gallery-4.svg">
+            <div class="gallery-frame">
+              <img src="assets/images/gallery-4.svg" alt="Feast Hospitality and Golden Candelabra" class="gallery-img"
+                loading="lazy">
+              <div class="gallery-overlay">
+                <span class="overlay-icon">🔍</span>
+                <span class="overlay-title">Feast &amp; Hospitality</span>
+                <span class="overlay-sub">Traditional Welcome</span>
+              </div>
+            </div>
+          </figure>
+
+          <!-- Item 5 -->
+          <figure class="gallery-item" tabindex="0" data-caption="The Bridal Blossoms — Grace &amp; Radiance"
+            data-src="assets/images/gallery-5.svg">
+            <div class="gallery-frame">
+              <img src="assets/images/gallery-5.svg" alt="Bridal Blossoms Bouquet" class="gallery-img" loading="lazy">
+              <div class="gallery-overlay">
+                <span class="overlay-icon">🔍</span>
+                <span class="overlay-title">Bridal Blossoms</span>
+                <span class="overlay-sub">Grace &amp; Radiance</span>
+              </div>
+            </div>
+          </figure>
+
+          <!-- Item 6 -->
+          <figure class="gallery-item" tabindex="0" data-caption="Festive Illumination — Lights &amp; Blessings"
+            data-src="assets/images/gallery-6.svg">
+            <div class="gallery-frame">
+              <img src="assets/images/gallery-6.svg" alt="Festive Wedding Lanterns and Lights" class="gallery-img"
+                loading="lazy">
+              <div class="gallery-overlay">
+                <span class="overlay-icon">🔍</span>
+                <span class="overlay-title">Festive Illumination</span>
+                <span class="overlay-sub">Lights &amp; Blessings</span>
+              </div>
+            </div>
+          </figure>
+
+        </div><!-- /gallery-grid -->
+
+        <!-- Website Owner Easy Photo Swap Notice -->
+        <div class="gallery-owner-note">
+          <span class="note-badge">📸 Note for Hosts</span>
+          <p>You can effortlessly personalize this gallery by placing your wedding photos into the
+            <code>assets/images/</code> folder as detailed in the <a href="#instructionsModal" id="viewGuideLink">Setup
+              Guide</a>.
+          </p>
+        </div>
+
+      </div><!-- /container -->
+    </section>
+
+    <!-- ==============================================
+         SECTION 6: PREVIEW YOUR PHOTOS (LOCAL PREVIEW)
+         ============================================== -->
+    <section class="section preview-section" id="preview">
+      <div class="container">
+
+        <div class="preview-card-wrapper reveal-item">
+          <div class="section-header text-center">
+            <span class="section-tag">Interactive Feature</span>
+            <h2 class="section-title">PREVIEW YOUR PHOTOS</h2>
+            <div class="ornamental-divider" aria-hidden="true">
+              <img src="assets/images/floral-divider.svg" alt="" class="divider-img">
+            </div>
+            <p class="section-desc">
+              Select photographs from your device to preview how your wedding snapshots and family memories look in the
+              album grid.
+            </p>
+          </div>
+
+          <!-- Upload Dropzone / File Picker -->
+          <div class="upload-dropzone" id="uploadDropzone">
+            <input type="file" id="photoFileInput" class="file-input-hidden"
+              accept="image/jpeg,image/png,image/webp,image/gif" multiple
+              aria-label="Select photos from your device to preview">
+
+            <div class="dropzone-inner">
+              <div class="dropzone-icon" aria-hidden="true">🖼️</div>
+              <h3 class="dropzone-title">Click to Select or Drag Photos Here</h3>
+              <p class="dropzone-text">Supports JPG, PNG, WEBP, or GIF (Up to 8 photographs)</p>
+              <button type="button" class="btn btn-gold btn-sm" id="browsePhotosBtn">
+                Browse Files
+              </button>
+            </div>
+          </div>
+
+          <!-- Privacy & Local-Only Disclaimer -->
+          <div class="privacy-notice-box">
+            <span class="privacy-icon">🔒</span>
+            <p><strong>Local Preview Only:</strong> Selected photographs are rendered entirely inside your browser for
+              instant preview. No files are uploaded to any server or shared with anyone.</p>
+          </div>
+
+          <!-- Dynamic Preview Area Header (Action buttons & count) -->
+          <div class="preview-header-bar hidden" id="previewHeaderBar">
+            <div class="preview-count" id="previewCount">0 of 8 photos selected</div>
+            <button type="button" class="btn btn-subtle btn-sm" id="clearAllPreviewsBtn">Clear All</button>
+          </div>
+
+          <!-- Status Message for Invalid or Empty Selection -->
+          <div id="previewStatusMsg" class="preview-status-msg" aria-live="polite"></div>
+
+          <!-- Dynamic Preview Grid -->
+          <div class="user-preview-grid" id="userPreviewGrid">
+            <!-- Dynamically injected preview cards -->
+          </div>
+
+        </div><!-- /preview-card-wrapper -->
+
+      </div><!-- /container -->
+    </section>
+
+    <!-- ==============================================
+         SECTION 7: SPECIAL CREATOR CREDIT & BLESSING
+         ============================================== -->
+    <section class="section creator-credit-section" id="credit">
+      <div class="container">
+
+        <div class="creator-card reveal-item">
+          <!-- Soft luxury gold border glow -->
+          <div class="creator-content">
+            <div class="creator-heart-icon" aria-hidden="true">💖</div>
+
+            <p class="creator-prelude">Created with love by</p>
+
+            <h2 class="creator-name">MOHAMMAD ALAMIN HUSSAIN</h2>
+
+            <p class="creator-relationship">The Bride's Cousin Brother</p>
+
+            <div class="ornamental-divider" aria-hidden="true">
+              <img src="assets/images/floral-divider.svg" alt="" class="divider-img">
+            </div>
+
+            <p class="creator-prayer">
+              May Allah shower His infinite blessings, happiness, long life, and everlasting harmony upon Sharik &amp;
+              Zainab on their new journey together.
+            </p>
+          </div>
+        </div>
+
+      </div><!-- /container -->
+    </section>
+  </main>
+
+  <!-- ==============================================
+       FOOTER
+       ============================================== -->
+  <footer class="main-footer">
+    <div class="container text-center">
+      <div class="footer-names">Sharik &amp; Zainab</div>
+      <div class="footer-date">12 November 2026</div>
+      <p class="footer-venue">Roh, Nawada, Bihar, India</p>
+      <div class="footer-divider"></div>
+      <p class="footer-credit">
+        Sharik &amp; Zainab | 12 November 2026
+      </p>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal for Gallery Images -->
+  <div id="galleryLightbox" class="lightbox-modal hidden" role="dialog" aria-modal="true"
+    aria-label="Enlarged Wedding Photo">
+    <div class="lightbox-backdrop"></div>
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxCloseBtn" aria-label="Close photo view">✕</button>
+      <div class="lightbox-image-wrap">
+        <img id="lightboxImg" src="" alt="Enlarged view">
+      </div>
+      <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+  </div>
+
+  <!-- Instructions Modal for Hosting / Photos -->
+  <div id="guideModal" class="guide-modal hidden" role="dialog" aria-modal="true" aria-labelledby="guideTitle">
+    <div class="modal-backdrop"></div>
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <span class="modal-icon">📖</span>
+        <h3 id="guideTitle">Wedding Website Guide</h3>
+      </div>
+      <div class="modal-body">
+        <h4>1. How to replace gallery photos:</h4>
+        <p>Save your preferred photographs inside <code>assets/images/</code> as <code>gallery-1.jpg</code>,
+          <code>gallery-2.jpg</code>, etc., or update the image sources in <code>index.html</code>.
+        </p>
+        <h4>2. How to preview locally:</h4>
+        <p>Double-click <code>index.html</code> in any web browser, or launch a local web server (e.g.
+          <code>python -m http.server</code> or VS Code Live Server).
+        </p>
+        <h4>3. Free static online publishing:</h4>
+        <p>Publish freely on GitHub Pages, Netlify, or Vercel with zero backend configuration needed!</p>
+      </div>
+      <div class="modal-actions">
+        <button type="button" class="btn btn-gold btn-sm" id="guideCloseBtn">Got it!</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toastNotification" class="toast-notification hidden" role="status" aria-live="polite"></div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,183 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="100%" height="100%">
+  <defs>
+    <!-- Royal Champagne Gold Gradient -->
+    <linearGradient id="opCornerGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C5A059"/>
+      <stop offset="35%" stop-color="#FDF4D1"/>
+      <stop offset="70%" stop-color="#B88E3E"/>
+      <stop offset="100%" stop-color="#8C6623"/>
+    </linearGradient>
+
+    <!-- Rose Petal Shading Gradients -->
+    <radialGradient id="roseGradient1" cx="40%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#FFF5F2"/>
+      <stop offset="45%" stop-color="#F5CAC2"/>
+      <stop offset="85%" stop-color="#E29288"/>
+      <stop offset="100%" stop-color="#C6695F"/>
+    </radialGradient>
+
+    <radialGradient id="roseGradient2" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="40%" stop-color="#F8DCD6"/>
+      <stop offset="80%" stop-color="#E8A598"/>
+      <stop offset="100%" stop-color="#D0766B"/>
+    </radialGradient>
+
+    <!-- Soft Bud Gradient -->
+    <linearGradient id="budGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF0EC"/>
+      <stop offset="60%" stop-color="#EAA69A"/>
+      <stop offset="100%" stop-color="#BF5E54"/>
+    </linearGradient>
+
+    <!-- Muted Sage Green Leaves -->
+    <linearGradient id="sageLeafGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B2C5AD"/>
+      <stop offset="50%" stop-color="#8FA489"/>
+      <stop offset="100%" stop-color="#677D61"/>
+    </linearGradient>
+
+    <linearGradient id="sageLeafGrad2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#C5D6C1"/>
+      <stop offset="60%" stop-color="#9DB197"/>
+      <stop offset="100%" stop-color="#72886C"/>
+    </linearGradient>
+
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-color="#553D26" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- ==============================================
+       1. ORNATE CHAMPAGNE GOLD SCROLLS & FILIGREE
+       ============================================== -->
+  <g stroke="url(#opCornerGold)" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.9">
+    <!-- Outer archival corner borders -->
+    <path d="M 12,280 L 12,45 A 33,33 0 0,1 45,12 L 280,12" stroke-width="2.5"/>
+    <path d="M 24,250 L 24,52 A 28,28 0 0,1 52,24 L 250,24" stroke-width="1.2" stroke-dasharray="5,4" opacity="0.75"/>
+    
+    <!-- Delicate arabesque vines -->
+    <path d="M 12,12 Q 75,75 125,48 Q 165,26 195,50 Q 220,70 205,100 Q 185,125 150,110" stroke-width="1.6"/>
+    <path d="M 12,12 Q 75,75 48,125 Q 26,165 50,195 Q 70,220 100,205 Q 125,185 110,150" stroke-width="1.6"/>
+    <path d="M 45,12 Q 95,95 160,80 Q 200,70 220,35" stroke-width="1.2" opacity="0.8"/>
+    <path d="M 12,45 Q 95,95 80,160 Q 70,200 35,220" stroke-width="1.2" opacity="0.8"/>
+
+    <!-- Flourish spirals -->
+    <path d="M 195,50 C 215,35 240,45 235,68 C 230,88 205,85 200,72" stroke-width="1.2"/>
+    <path d="M 50,195 C 35,215 45,240 68,235 C 88,230 85,205 72,200" stroke-width="1.2"/>
+  </g>
+
+  <!-- Gold foliage sprigs & metallic droplets -->
+  <g fill="url(#opCornerGold)" stroke="none">
+    <!-- Golden berry clusters -->
+    <circle cx="215" cy="38" r="4.5"/>
+    <circle cx="230" cy="48" r="3.5"/>
+    <circle cx="242" cy="36" r="3"/>
+    
+    <circle cx="38" cy="215" r="4.5"/>
+    <circle cx="48" cy="230" r="3.5"/>
+    <circle cx="36" cy="242" r="3"/>
+
+    <!-- Small gold accent stars/sparkles -->
+    <path d="M 140,32 Q 140,40 145,40 Q 140,40 140,48 Q 140,40 135,40 Q 140,40 140,32 Z"/>
+    <path d="M 32,140 Q 32,148 40,148 Q 32,148 32,156 Q 32,148 24,148 Q 32,148 32,140 Z"/>
+    <path d="M 175,125 Q 175,130 178,130 Q 175,130 175,135 Q 175,130 172,130 Q 175,130 175,125 Z" opacity="0.8"/>
+  </g>
+
+  <!-- ==============================================
+       2. MUTED SAGE-GREEN BOTANICAL LEAVES
+       ============================================== -->
+  <g filter="url(#softShadow)">
+    <!-- Leaves behind the secondary rose (top-right branch) -->
+    <path d="M 160,55 C 185,35 210,48 220,70 C 200,82 175,75 160,55 Z" fill="url(#sageLeafGrad1)" opacity="0.92"/>
+    <path d="M 160,55 Q 190,60 220,70" stroke="#50654B" stroke-width="0.9" fill="none" opacity="0.6"/>
+
+    <path d="M 145,72 C 165,65 190,80 192,105 C 172,108 152,95 145,72 Z" fill="url(#sageLeafGrad2)" opacity="0.88"/>
+    <path d="M 145,72 Q 170,88 192,105" stroke="#50654B" stroke-width="0.8" fill="none" opacity="0.6"/>
+
+    <!-- Leaves behind the secondary rose (bottom-left branch) -->
+    <path d="M 55,160 C 35,185 48,210 70,220 C 82,200 75,175 55,160 Z" fill="url(#sageLeafGrad1)" opacity="0.92"/>
+    <path d="M 55,160 Q 60,190 70,220" stroke="#50654B" stroke-width="0.9" fill="none" opacity="0.6"/>
+
+    <path d="M 72,145 C 65,165 80,190 105,192 C 108,172 95,152 72,145 Z" fill="url(#sageLeafGrad2)" opacity="0.88"/>
+    <path d="M 72,145 Q 88,170 105,192" stroke="#50654B" stroke-width="0.8" fill="none" opacity="0.6"/>
+
+    <!-- Major foliage framing the primary central bloom -->
+    <path d="M 85,42 C 75,15 95,-5 120,5 C 125,32 108,50 85,42 Z" fill="url(#sageLeafGrad1)" opacity="0.9"/>
+    <path d="M 42,85 C 15,75 -5,95 5,120 C 32,125 50,108 42,85 Z" fill="url(#sageLeafGrad2)" opacity="0.9"/>
+    
+    <!-- Delicate eucalyptus rounded leaf pairs -->
+    <ellipse cx="118" cy="85" rx="16" ry="10" transform="rotate(-30 118 85)" fill="url(#sageLeafGrad2)" opacity="0.85"/>
+    <ellipse cx="85" cy="118" rx="10" ry="16" transform="rotate(-30 85 118)" fill="url(#sageLeafGrad1)" opacity="0.85"/>
+  </g>
+
+  <!-- ==============================================
+       3. SOFT BLUSH WATERCOLOR ROSES & BLOSSOMS
+       ============================================== -->
+  <g filter="url(#softShadow)">
+    <!-- Secondary Rose (Top-Right) -->
+    <g transform="translate(165, 78)">
+      <!-- Outer Petals -->
+      <path d="M -18,-10 C -22,-25 5,-32 18,-20 C 30,-8 28,15 15,22 C -2,28 -20,18 -18,-10 Z" fill="url(#roseGradient2)" opacity="0.9"/>
+      <path d="M -12,-16 C 0,-26 22,-18 20,2 C 18,18 -8,22 -15,10 C -20,0 -18,-10 -12,-16 Z" fill="url(#roseGradient1)" opacity="0.92"/>
+      <!-- Inner Blossom Swirl -->
+      <path d="M -8,-6 C -2,-14 12,-12 12,-2 C 12,6 2,10 -4,6 C -9,2 -10,-2 -8,-6 Z" fill="#FBF0EC"/>
+      <path d="M -4,-2 C 0,-6 7,-5 7,0 C 7,4 2,6 -1,4 Z" fill="#C86A60"/>
+    </g>
+
+    <!-- Secondary Rose (Bottom-Left) -->
+    <g transform="translate(78, 165)">
+      <!-- Outer Petals -->
+      <path d="M -10,-18 C -25,-22 -32,5 -20,18 C -8,30 15,28 22,15 C 28,-2 18,-20 -10,-18 Z" fill="url(#roseGradient2)" opacity="0.9"/>
+      <path d="M -16,-12 C -26,0 -18,22 2,20 C 18,18 22,-8 10,-15 C 0,-20 -10,-18 -16,-12 Z" fill="url(#roseGradient1)" opacity="0.92"/>
+      <!-- Inner Blossom Swirl -->
+      <path d="M -6,-8 C -14,-2 -12,12 -2,12 C 6,12 10,2 6,-4 C 2,-9 -2,-10 -6,-8 Z" fill="#FBF0EC"/>
+      <path d="M -2,-4 C -6,0 -5,7 0,7 C 4,7 6,2 4,-1 Z" fill="#C86A60"/>
+    </g>
+
+    <!-- Tender Rosebuds on outskirts -->
+    <!-- Top Bud -->
+    <g transform="translate(205, 48)">
+      <path d="M 0,0 C 8,-10 18,-5 15,8 C 12,18 -2,15 0,0 Z" fill="url(#budGradient)"/>
+      <path d="M -2,4 Q 3,14 10,12" stroke="#677D61" stroke-width="1.4" fill="none"/>
+    </g>
+    <!-- Left Bud -->
+    <g transform="translate(48, 205)">
+      <path d="M 0,0 C -10,8 -5,18 8,15 C 18,12 15,-2 0,0 Z" fill="url(#budGradient)"/>
+      <path d="M 4,-2 Q 14,3 12,10" stroke="#677D61" stroke-width="1.4" fill="none"/>
+    </g>
+
+    <!-- ==============================================
+         4. PRINCIPAL GRAND BLUSH ROSE (APEX BLOOM)
+         ============================================== -->
+    <g transform="translate(82, 82)">
+      <!-- Base Petal Radiance -->
+      <ellipse cx="0" cy="0" rx="34" ry="32" fill="url(#roseGradient2)" opacity="0.75"/>
+      
+      <!-- Tier 1: Outer Curved Velvet Petals -->
+      <path d="M -28,-14 C -36,-32 8,-42 26,-26 C 42,-12 40,24 22,34 C 4,44 -26,32 -32,10 C -35,-2 -32,-8 -28,-14 Z" fill="url(#roseGradient2)"/>
+      <path d="M -18,-28 C 8,-38 35,-22 34,4 C 33,26 6,36 -14,28 C -32,20 -35,-8 -18,-28 Z" fill="url(#roseGradient1)" opacity="0.95"/>
+
+      <!-- Tier 2: Mid Petals Embracing the Heart -->
+      <path d="M -22,-8 C -24,-24 4,-28 18,-18 C 30,-8 28,16 12,22 C -4,28 -20,18 -22,-8 Z" fill="#FFF2EE"/>
+      <path d="M -14,-16 C 0,-26 22,-18 20,2 C 18,18 -6,22 -14,12 C -20,2 -18,-8 -14,-16 Z" fill="url(#roseGradient1)"/>
+
+      <!-- Tier 3: Core Rosebud Petals -->
+      <path d="M -12,-6 C -10,-16 8,-16 12,-6 C 16,4 4,14 -4,12 C -12,10 -14,2 -12,-6 Z" fill="#FCE5E0"/>
+      <path d="M -8,-4 C -6,-12 6,-12 8,-4 C 10,4 2,8 -3,6 C -8,4 -9,1 -8,-4 Z" fill="url(#roseGradient2)"/>
+
+      <!-- Tier 4: Delicate Spiraling Stigma Heart -->
+      <path d="M -4,-2 C -2,-7 4,-6 5,-1 C 6,4 0,6 -3,4 C -5,2 -5,0 -4,-2 Z" fill="#B45750"/>
+      <circle cx="0" cy="0" r="2.2" fill="#FFE8A3"/>
+    </g>
+  </g>
+
+  <!-- Final golden shimmer droplets -->
+  <g fill="#FCF6BA" opacity="0.9">
+    <circle cx="68" cy="46" r="2"/>
+    <circle cx="46" cy="68" r="2"/>
+    <circle cx="112" cy="112" r="2.2"/>
+    <circle cx="150" cy="140" r="1.8"/>
+    <circle cx="140" cy="150" r="1.8"/>
+  </g>
+</svg>

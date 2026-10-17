@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDFBF7"/>
+      <stop offset="50%" stop-color="#F4ECE5"/>
+      <stop offset="100%" stop-color="#EBE2DA"/>
+    </linearGradient>
+    <linearGradient id="goldSeal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4AF37"/>
+      <stop offset="40%" stop-color="#FFF0BE"/>
+      <stop offset="70%" stop-color="#AA771C"/>
+      <stop offset="100%" stop-color="#7A5210"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#553A26" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bgGrad3)"/>
+  <rect x="25" y="25" width="750" height="550" rx="16" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-opacity="0.5"/>
+  <rect x="35" y="35" width="730" height="530" rx="12" fill="none" stroke="#E8A598" stroke-width="0.8" stroke-opacity="0.4" stroke-dasharray="6,4"/>
+
+  <!-- Botanical corner touches -->
+  <g stroke="#C5A059" stroke-width="1.2" fill="none" opacity="0.6">
+    <path d="M45,80 Q70,50 110,48 M60,65 Q85,75 100,68"/>
+    <path d="M755,80 Q730,50 690,48 M740,65 Q715,75 700,68"/>
+  </g>
+
+  <!-- Envelope & Invitation Suite -->
+  <g filter="url(#cardShadow)" transform="translate(400, 240)">
+    <!-- Back Envelope Flap Layer -->
+    <rect x="-190" y="-120" width="380" height="240" rx="10" fill="#EFE8E1" stroke="#D7C9BF" stroke-width="1.5"/>
+    <polygon points="-190,-120 0,30 190,-120" fill="#E6DDD4" stroke="#D7C9BF" stroke-width="1.2"/>
+
+    <!-- Pull-out Invitation Card -->
+    <g transform="translate(0, -35)">
+      <rect x="-160" y="-100" width="320" height="200" rx="8" fill="#FFFFFF" stroke="#D4AF37" stroke-width="1.5"/>
+      <rect x="-150" y="-90" width="300" height="180" rx="6" fill="none" stroke="#E8A598" stroke-width="0.8" stroke-opacity="0.7"/>
+      
+      <!-- Card inner details -->
+      <text x="0" y="-55" text-anchor="middle" font-family="'Great Vibes', cursive, 'Brush Script MT', serif" font-size="28" fill="#D4AF37">Bismillah</text>
+      <text x="0" y="-22" text-anchor="middle" font-family="'Montserrat', sans-serif" font-size="10" font-weight="600" fill="#8C7768" letter-spacing="2">CORDIALLY INVITED TO CELEBRATE</text>
+      <text x="0" y="8" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-size="19" font-weight="700" fill="#2C2623" letter-spacing="1">SHARIK &amp; ZAINAB</text>
+      <line x1="-60" y1="22" x2="60" y2="22" stroke="#D4AF37" stroke-width="1"/>
+      <text x="0" y="44" text-anchor="middle" font-family="'Montserrat', sans-serif" font-size="9" font-weight="600" fill="#A86E64" letter-spacing="3">12 NOVEMBER 2026</text>
+      <text x="0" y="62" text-anchor="middle" font-family="'Montserrat', sans-serif" font-size="8" fill="#786B62">ROH, NAWADA, BIHAR</text>
+    </g>
+
+    <!-- Front Envelope Triangles -->
+    <polygon points="-190,-120 -190,120 0,25" fill="#FAF6F2" stroke="#DFD5CB" stroke-width="1.2"/>
+    <polygon points="190,-120 190,120 0,25" fill="#FAF6F2" stroke="#DFD5CB" stroke-width="1.2"/>
+    <polygon points="-190,120 190,120 0,25" fill="#F4EFEA" stroke="#DFD5CB" stroke-width="1.2"/>
+
+    <!-- Royal Golden Wax Seal with Monogram "SZ" -->
+    <g transform="translate(0, 30)">
+      <circle cx="0" cy="0" r="32" fill="url(#goldSeal)" filter="url(#cardShadow)"/>
+      <circle cx="0" cy="0" r="28" fill="none" stroke="#FFF5CC" stroke-width="1" opacity="0.8"/>
+      <circle cx="0" cy="0" r="25" fill="none" stroke="#AA771C" stroke-width="0.8"/>
+      <!-- SZ Monogram -->
+      <text x="0" y="9" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-size="20" font-weight="700" fill="#FFFFFF" letter-spacing="2">SZ</text>
+    </g>
+  </g>
+
+  <!-- Typography Labels -->
+  <text x="400" y="475" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-size="24" font-weight="600" fill="#3D312A" letter-spacing="3">THE ROYAL INVITATION</text>
+  <text x="400" y="505" text-anchor="middle" font-family="'Montserrat', sans-serif" font-size="12" font-weight="500" fill="#8C7768" letter-spacing="4">SEALED WITH BLESSINGS</text>
+  <line x1="330" y1="485" x2="470" y2="485" stroke="#D4AF37" stroke-width="0.8" opacity="0.6"/>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 60" width="100%" height="100%">
+  <defs>
+    <linearGradient id="divGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C5A059" stop-opacity="0"/>
+      <stop offset="25%" stop-color="#C5A059" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#D4AF37" stop-opacity="1"/>
+      <stop offset="75%" stop-color="#C5A059" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#C5A059" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Left Whispering Vine -->
+  <path d="M 40,30 Q 140,25 210,30 C 230,22 245,26 260,30" fill="none" stroke="url(#divGold)" stroke-width="1.5" stroke-linecap="round"/>
+  <circle cx="180" cy="24" r="2.5" fill="#E8A598"/>
+  <circle cx="215" cy="35" r="2.5" fill="#E8A598"/>
+  <path d="M 195,28 Q 202,20 210,25" fill="none" stroke="#8A9A86" stroke-width="1.2"/>
+
+  <!-- Right Whispering Vine -->
+  <path d="M 560,30 Q 460,25 390,30 C 370,22 355,26 340,30" fill="none" stroke="url(#divGold)" stroke-width="1.5" stroke-linecap="round"/>
+  <circle cx="420" cy="24" r="2.5" fill="#E8A598"/>
+  <circle cx="385" cy="35" r="2.5" fill="#E8A598"/>
+  <path d="M 405,28 Q 398,20 390,25" fill="none" stroke="#8A9A86" stroke-width="1.2"/>
+
+  <!-- Center Blossom & Diamond Motif -->
+  <g transform="translate(300, 30)">
+    <circle cx="0" cy="0" r="14" fill="#FFFDF8" stroke="#D4AF37" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="9" fill="#F8E5E1"/>
+    <circle cx="0" cy="0" r="5" fill="#D8827C"/>
+    
+    <polygon points="0,-22 4,-16 0,-10 -4,-16" fill="#D4AF37"/>
+    <polygon points="0,22 4,16 0,10 -4,16" fill="#D4AF37"/>
+    <polygon points="-22,0 -16,4 -10,0 -16,-4" fill="#D4AF37"/>
+    <polygon points="22,0 16,4 10,0 16,-4" fill="#D4AF37"/>
+
+    <circle cx="-32" cy="0" r="2.5" fill="#D4AF37"/>
+    <circle cx="32" cy="0" r="2.5" fill="#D4AF37"/>
+  </g>
+</svg>

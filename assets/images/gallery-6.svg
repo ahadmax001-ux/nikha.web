@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCF8F5"/>
+      <stop offset="50%" stop-color="#F3ECE5"/>
+      <stop offset="100%" stop-color="#E9DFD5"/>
+    </linearGradient>
+    <radialGradient id="nightGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFBEB" stop-opacity="1"/>
+      <stop offset="30%" stop-color="#FDE68A" stop-opacity="0.8"/>
+      <stop offset="60%" stop-color="#F59E0B" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#D97706" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="goldLantern" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#B48524"/>
+      <stop offset="35%" stop-color="#FDF3B8"/>
+      <stop offset="70%" stop-color="#AA771C"/>
+      <stop offset="100%" stop-color="#7C520E"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bgGrad6)"/>
+  <rect x="25" y="25" width="750" height="550" rx="16" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-opacity="0.5"/>
+  <rect x="35" y="35" width="730" height="530" rx="12" fill="none" stroke="#E8A598" stroke-width="0.8" stroke-opacity="0.4" stroke-dasharray="6,4"/>
+
+  <!-- Fairy Lights String Across Top -->
+  <path d="M 60 90 Q 220 140 400 95 Q 580 140 740 90" fill="none" stroke="#D4AF37" stroke-width="1.2" opacity="0.6"/>
+  <g fill="#FFFDF0" stroke="#F59E0B" stroke-width="0.8">
+    <circle cx="120" cy="105" r="4"/><circle cx="120" cy="105" r="12" fill="#FDE68A" opacity="0.4"/>
+    <circle cx="200" cy="118" r="4"/><circle cx="200" cy="118" r="12" fill="#FDE68A" opacity="0.4"/>
+    <circle cx="280" cy="116" r="4"/><circle cx="280" cy="116" r="12" fill="#FDE68A" opacity="0.4"/>
+    <circle cx="360" cy="102" r="4"/><circle cx="360" cy="102" r="12" fill="#FDE68A" opacity="0.4"/>
+    <circle cx="440" cy="102" r="4"/><circle cx="440" cy="102" r="12" fill="#FDE68A" opacity="0.4"/>
+    <circle cx="520" cy="116" r="4"/><circle cx="520" cy="116" r="12" fill="#FDE68A" opacity="0.4"/>
+    <circle cx="600" cy="118" r="4"/><circle cx="600" cy="118" r="12" fill="#FDE68A" opacity="0.4"/>
+    <circle cx="680" cy="105" r="4"/><circle cx="680" cy="105" r="12" fill="#FDE68A" opacity="0.4"/>
+  </g>
+
+  <!-- Central Grand Moroccan/Mughal Lantern -->
+  <g transform="translate(400, 240)">
+    <!-- Hanging Chain -->
+    <line x1="0" y1="-140" x2="0" y2="-60" stroke="#AA771C" stroke-width="2.5" stroke-dasharray="4,4"/>
+    <!-- Ambient Glow Halo -->
+    <circle cx="0" cy="10" r="110" fill="url(#nightGlow)"/>
+
+    <!-- Lantern Top Cap -->
+    <path d="M0,-85 L15,-60 L-15,-60 Z" fill="url(#goldLantern)"/>
+    <ellipse cx="0" cy="-60" rx="35" ry="8" fill="url(#goldLantern)"/>
+    <path d="M-35,-60 L-45,-20 L45,-20 L35,-60 Z" fill="url(#goldLantern)"/>
+    
+    <!-- Glass Body with Arabesque Lattice -->
+    <rect x="-42" y="-20" width="84" height="70" fill="#FFFDF2" opacity="0.8" stroke="url(#goldLantern)" stroke-width="2"/>
+    <!-- Lattice arches -->
+    <path d="M-35,30 L-35,-10 A15,15 0 0,1 -5,-10 L-5,30" fill="none" stroke="url(#goldLantern)" stroke-width="1.8"/>
+    <path d="M-5,30 L-5,-10 A15,15 0 0,1 25,-10 L25,30" fill="none" stroke="url(#goldLantern)" stroke-width="1.8"/>
+    <!-- Candle inside -->
+    <rect x="-8" y="10" width="16" height="25" fill="#FAF5E8"/>
+    <path d="M0,0 Q-4,6 0,10 Q4,6 0,0" fill="#FFB703"/>
+
+    <!-- Lantern Base -->
+    <path d="M-45,50 L-30,80 L30,80 L45,50 Z" fill="url(#goldLantern)"/>
+    <circle cx="0" cy="90" r="6" fill="url(#goldLantern)"/>
+  </g>
+
+  <!-- Side Companion Lanterns -->
+  <g transform="translate(250, 250)">
+    <line x1="0" y1="-150" x2="0" y2="-40" stroke="#AA771C" stroke-width="1.5" stroke-dasharray="3,3"/>
+    <circle cx="0" cy="15" r="70" fill="url(#nightGlow)"/>
+    <path d="M-25,-40 L25,-40 L35,20 L-35,20 Z" fill="url(#goldLantern)"/>
+    <rect x="-28" y="-30" width="56" height="40" fill="#FFFBEB" opacity="0.85"/>
+    <path d="M-35,20 L0,55 L35,20 Z" fill="url(#goldLantern)"/>
+  </g>
+
+  <g transform="translate(550, 250)">
+    <line x1="0" y1="-150" x2="0" y2="-40" stroke="#AA771C" stroke-width="1.5" stroke-dasharray="3,3"/>
+    <circle cx="0" cy="15" r="70" fill="url(#nightGlow)"/>
+    <path d="M-25,-40 L25,-40 L35,20 L-35,20 Z" fill="url(#goldLantern)"/>
+    <rect x="-28" y="-30" width="56" height="40" fill="#FFFBEB" opacity="0.85"/>
+    <path d="M-35,20 L0,55 L35,20 Z" fill="url(#goldLantern)"/>
+  </g>
+
+  <!-- Typography Labels -->
+  <text x="400" y="475" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-size="24" font-weight="600" fill="#3D312A" letter-spacing="3">FESTIVE ILLUMINATION</text>
+  <text x="400" y="505" text-anchor="middle" font-family="'Montserrat', sans-serif" font-size="12" font-weight="500" fill="#8C7768" letter-spacing="4">LIGHTS &amp; BLESSINGS</text>
+  <line x1="330" y1="485" x2="470" y2="485" stroke="#D4AF37" stroke-width="0.8" opacity="0.6"/>
+</svg>
