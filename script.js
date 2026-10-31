@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // 1. CONSTANTS & DETAILS
   // =========================================================================
   const WEDDING_CONFIG = {
+    bride: 'Zainab parween',
     groom: 'Sharik Zafar Siddiqui',
-    bride: 'Zainab Parween',
     event: 'Baraat Ceremony',
     dateText: '12 November 2026',
     dayText: 'Thursday',
